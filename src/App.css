@@ -9,7 +9,7 @@ html {
   justify-content: center;
   background-color: rgba(55, 135, 96, 0.1);
   align-items: center;
-  padding-bottom: 13rem;
+  padding-bottom: 12rem;
 }
 
 .flex {
@@ -143,6 +143,7 @@ html {
 .slots {
   overflow-y: scroll;
   height: 75%;
+  padding-bottom: 2rem;
 }
 
 .slot-card {
@@ -191,7 +192,7 @@ html {
 }
 
 .navbar {
-  padding: 0.8rem 2.5rem;
+  padding: 0 2.5rem;
   display: flex;
   justify-content: space-between;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -223,6 +224,7 @@ html {
   background: #fff;
   padding: 0rem 2rem 1rem 2rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 .options .option {
@@ -383,7 +385,7 @@ hr {
 
 .right-boxes {
   position: absolute;
-  bottom: 23%;
+  bottom: 28%;
   transform: skewY(-10deg);
   display: flex;
   flex-direction: column;
@@ -395,7 +397,7 @@ hr {
   position: absolute;
   transform: skewY(-10deg);
   left: 0;
-  bottom: 0;
+  bottom: 8%;
 }
 
 .bg-box {
