@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <Logo imgSrc={"../public/assets/logo.png"} />
+        <Logo imgSrc={"assets/logo.png"} />
         <div className="nav-btns">
           <span className="nav-btn">
             <Dropdown label="Menu" items={["Profile", "Settings"]} />

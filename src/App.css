@@ -9,7 +9,7 @@ html {
   justify-content: center;
   background-color: rgba(55, 135, 96, 0.1);
   align-items: center;
-  padding-bottom: 10rem;
+  padding-bottom: 13rem;
 }
 
 .flex {
@@ -151,7 +151,7 @@ html {
   border-radius: 5px;
   font-family: "Poppins";
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #378760;
   padding: 1rem 0.5rem;
   box-sizing: border-box;
@@ -204,7 +204,9 @@ html {
 }
 
 .nav-btns .nav-btn {
+  font-family: "Poppins";
   margin: 0px 5px;
+  font-weight: 400;
 }
 
 .cursor-pointer {
@@ -242,7 +244,9 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+  font-size: 14px;
   border: 1px solid #c7c9d9;
+  font-weight: 600;
   border-radius: 10px;
   color: #378760;
 }
@@ -374,6 +378,7 @@ hr {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 5rem;
 }
 
 .right-boxes {
@@ -427,14 +432,17 @@ hr {
   .calendar-container {
     width: 90%;
   }
+
   .slots-container {
     width: 90%;
   }
+
   .scheduler-content {
     flex-direction: column;
     height: auto;
     align-items: center;
   }
+
   .container {
     background: rgba(55, 135, 96, 0.2);
     padding-bottom: 2rem;
@@ -449,6 +457,11 @@ hr {
   .nav-btns {
     display: none;
   }
+
+  .scheduler-container {
+    width: 90%;
+  }
+
   .toggle {
     display: flex;
     align-items: center;
