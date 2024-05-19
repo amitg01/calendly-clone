@@ -4,7 +4,8 @@ import Logo from "./Logo";
 import Button from "./ui/button";
 import Dropdown from "./ui/dropdown";
 
-import { X, ExternalLink, Menu } from "lucide-react";
+import { ExternalLink, Menu } from "lucide-react";
+import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,24 +33,7 @@ const Navbar = () => {
           <Menu color={"#378760"} />
         </div>
       </nav>
-      <aside className={`sidebar ${isMenuOpen ? "open" : ""}`}>
-        <span className="close-btn" onClick={handleMenu}>
-          <X strokeWidth={1.5} fontSize={"1rem"} />
-        </span>
-        <div className="nav-btns">
-          <span>
-            <Dropdown label="Menu" items={["Profile", "Settings"]} />
-          </span>
-          <span>Contact us</span>
-          <span>
-            <Button
-              leftIcon={<ExternalLink color="#378760" strokeWidth={1.5} />}
-              label={"Share Link"}
-              className="outline-btn"
-            />
-          </span>
-        </div>
-      </aside>
+      <Sidebar isMenuOpen={isMenuOpen} handleMenu={handleMenu} />
     </>
   );
 };

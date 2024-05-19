@@ -31,10 +31,7 @@ const Dropdown = ({ label, items, value, isSelect, onChange, className }) => {
   }, [value]);
 
   return (
-    <div
-      className={clsx(["select-menu cursor-pointer"], [className])}
-      ref={DDRef}
-    >
+    <div className={clsx("select-menu cursor-pointer", className)} ref={DDRef}>
       {label && isSelect && <label className="dropdown-label">{label}</label>}
       <div
         className="select-btn flex align-center"

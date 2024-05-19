@@ -4,7 +4,10 @@ const Button = ({ label, leftIcon, rightIcon, onClick, className }) => {
   return (
     <div
       onClick={onClick}
-      className={clsx(["btn flex justify-between align-center", [className]])}
+      className={clsx([
+        "btn flex justify-between align-center cursor-pointer",
+        [className],
+      ])}
     >
       <span>{leftIcon && leftIcon}</span>
       <span className="btn-label">{label}</span>

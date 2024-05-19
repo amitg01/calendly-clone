@@ -12,16 +12,18 @@ const formatSlotTime = (start, end) => {
 
 const Slot = ({ start, end }) => {
   const dispatch = useDispatch();
+
   const handleCLick = () => {
     dispatch(setSelectedSlot(start));
   };
+
   const selectedSlot = useSelector((state) => state.scheduler.selectedSlot);
   const isSelected = selectedSlot == start;
 
   return (
     <div
       onClick={handleCLick}
-      className={clsx("slot-card mt-1 text-center", {
+      className={clsx("slot-card mt-1 text-center cursor-pointer", {
         "selected-slot": isSelected,
       })}
     >

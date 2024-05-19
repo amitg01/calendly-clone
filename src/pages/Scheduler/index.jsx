@@ -34,7 +34,7 @@ const Scheduler = () => {
     return (
       <div className="scheduler-footer flex align-center px-2 justify-between">
         <span className="scheduler_footer-text">
-          Powered by <span className="underline">Appointo</span>
+          Powered by <span className="underline cursor-pointer">Appointo</span>
         </span>
         <Button
           label={"Next"}
