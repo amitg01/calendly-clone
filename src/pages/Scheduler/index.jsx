@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import Button from "../../components/ui/button";
 
 import { ChevronRight } from "lucide-react";
+import { toast } from "react-toastify";
 
 const Scheduler = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,15 @@ const Scheduler = () => {
 
   const onDateChange = (dateStr) => {
     dispatch(setDate(dateStr.toISOString()));
-    dispatch(fetchSlots(dateStr));
+    fetchSlotData(dateStr);
+  };
+
+  const fetchSlotData = async (date) => {
+    try {
+      await dispatch(fetchSlots(date)).unwrap();
+    } catch (e) {
+      toast.error("Something went wrong!");
+    }
   };
 
   const onNextClick = () => {
@@ -27,7 +36,7 @@ const Scheduler = () => {
   };
 
   useEffect(() => {
-    dispatch(fetchSlots(date));
+    fetchSlotData(date);
   }, []);
 
   const SchedulerFooter = () => {

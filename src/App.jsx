@@ -1,7 +1,10 @@
-import "./App.css";
+import { ToastContainer } from "react-toastify";
 import BackGround from "./components/Background";
 import Navbar from "./components/Navbar";
 import Scheduler from "./pages/Scheduler";
+
+import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -11,6 +14,7 @@ function App() {
         <BackGround />
         <Scheduler />
       </main>
+      <ToastContainer position="bottom-right" />
     </>
   );
 }
