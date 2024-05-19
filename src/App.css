@@ -105,6 +105,10 @@ html {
   width: 14rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .h-full {
   height: 100%;
 }
@@ -176,6 +180,11 @@ html {
   font-family: "Poppins";
   color: #555770;
   font-size: 12px;
+}
+
+.empty-slot-text {
+  color: #378760;
+  font-weight: 600;
 }
 
 .calendar-container {

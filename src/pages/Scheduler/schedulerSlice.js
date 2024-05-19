@@ -45,7 +45,7 @@ export const schedulerSlice = createSlice({
   extraReducers(builder) {
     builder
       .addCase(fetchSlots.fulfilled, (state, action) => {
-        state.slots.data = action.payload[0].slots;
+        state.slots.data = action.payload[0]?.slots || [];
         state.slots.loading = false;
         state.selectedSlot = "";
       })

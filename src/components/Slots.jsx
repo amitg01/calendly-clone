@@ -20,6 +20,15 @@ const Slots = () => {
 
   if (loading) return <SlotsSkeleton />;
 
+  if (!slots?.length)
+    return (
+      <section className="slots-container p-2">
+        <p className="w-full h-full flex flex-center align-center empty-slot-text">
+          No Slots Available
+        </p>
+      </section>
+    );
+
   return (
     <section className="slots-container p-2">
       <Dropdown
